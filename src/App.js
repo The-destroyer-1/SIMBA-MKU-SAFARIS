@@ -123,7 +123,7 @@ function HomePage() {
         <div className="container">
           <h2>Get in Touch</h2>
           <div className="contact-info">
-            <div>📧 Email: info@simbasafaris.com</div>
+            <div>📧 Email: simbamkusafaris@gmail.com</div>
             <div>📱 Phone: +254 799708249</div>
             <div>📍 Location: Mombasa, Kenya</div>
           </div>
