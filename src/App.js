@@ -1,11 +1,32 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import logoIcon from './Screenshot 2026-02-22 210101.png';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Tours from './pages/Tours';
 import Destinations from './pages/Destinations';
 import About from './pages/About';
 
 function App() {
+  useEffect(() => {
+    try {
+      const setLink = (selector, rel, href) => {
+        let el = document.querySelector(selector);
+        if (!el) {
+          el = document.createElement('link');
+          el.rel = rel;
+          document.head.appendChild(el);
+        }
+        el.href = href;
+      };
+
+      setLink("link[rel='icon']", 'icon', logoIcon);
+      setLink("link[rel='shortcut icon']", 'shortcut icon', logoIcon);
+      setLink("link[rel='apple-touch-icon']", 'apple-touch-icon', logoIcon);
+    } catch (e) {
+      // silent fail if document is not available (SSR)
+      // console.warn('Could not set favicon', e);
+    }
+  }, []);
   return (
     <Router>
       <div className="App">

@@ -30,6 +30,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .header h1 {
@@ -41,8 +46,8 @@ body {
 .logo-title-wrapper {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
+  gap: 12px;
+  margin-bottom: 0;
 }
 
 .header-logo-image {
@@ -449,6 +454,20 @@ body {
     gap: 15px;
   }
 
+  .header-content {
+    padding: 8px 16px;
+  }
+
+  .header-logo-image {
+    height: 60px;
+    width: 60px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+    background-attachment: scroll;
+  }
+
   .hero-content h2 {
     font-size: 2rem;
   }
@@ -488,5 +507,31 @@ body {
   .destinations-grid,
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .header-logo-image {
+    height: 48px;
+    width: 48px;
+    padding: 6px;
+  }
+
+  .hero {
+    padding: 50px 16px;
+    background-attachment: scroll;
   }
 }
