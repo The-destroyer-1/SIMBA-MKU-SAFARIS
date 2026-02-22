@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.App {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #1a472a 0%, #2d5f3f 100%);
+  color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.logo-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.header-logo-image {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  background-color: #2d5f3f;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #1a472a;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s, background-color 0.3s;
+  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  background-color: #ffd700;
+  border-radius: 5px;
+}
+
+.nav a:hover {
+  color: #ffd700;
+  border-bottom-color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(26, 71, 42, 0.5), rgba(26, 71, 42, 0.5)),
+              url('./5b16c80d-e0d9-456e-a70a-4807790760c4.jpg') center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* CTA Button */
+.cta-button {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #1a472a;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Tours Section */
+.tours-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.tours-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1a472a;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.tour-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.tour-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.tour-header {
+  background: linear-gradient(135deg, #1a472a, #2d5f3f);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.tour-header h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.duration {
+  background: #ffd700;
+  color: #1a472a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.description {
+  padding: 20px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.highlights {
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background: #e8f5e9;
+  color: #1a472a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #1a472a;
+}
+
+.tour-footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.book-btn {
+  background: linear-gradient(135deg, #1a472a, #2d5f3f);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #2d5f3f, #1a472a);
+  transform: scale(1.05);
+}
+
+/* Destinations Section */
+.destinations-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.destinations-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1a472a;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.destination-card {
+  background: white;
+  color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.destination-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.destination-card h3 {
+  font-size: 1.5rem;
+  margin: 15px 20px 5px 20px;
+  color: #1a472a;
+}
+
+.destination-short {
+  margin: 5px 20px 10px 20px;
+  font-weight: 600;
+  color: #2d5f3f;
+  font-size: 0.95rem;
+}
+
+.destination-history {
+  margin: 0 20px 20px 20px;
+  opacity: 0.85;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: left;
+  flex-grow: 1;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1a472a;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 5px solid #ffd700;
+}
+
+.about-card h3 {
+  color: #1a472a;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a472a, #2d5f3f);
+  color: white;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0f2818;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #ffd700;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content h3 {
+  color: #1a472a;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #1a472a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .tours-section h2,
+  .destinations-section h2,
+  .about-section h2,
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-info {
+    gap: 20px;
+  }
+
+  .modal-content {
+    margin: 20px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .tours-grid,
+  .destinations-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

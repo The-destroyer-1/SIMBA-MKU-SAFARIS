@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b1994d86.css",
+    "main.js": "/static/js/main.20aeed64.js",
+    "static/js/453.a7e92a11.chunk.js": "/static/js/453.a7e92a11.chunk.js",
+    "static/media/maxresdefault-25.jpg": "/static/media/maxresdefault-25.964730570f5e3144c8dd.jpg",
+    "static/media/5b16c80d-e0d9-456e-a70a-4807790760c4.jpg": "/static/media/5b16c80d-e0d9-456e-a70a-4807790760c4.32d94a7fe062dcd05236.jpg",
+    "static/media/Mombasa-Kenya.jpg": "/static/media/Mombasa-Kenya.ad0bd42d5788374de453.jpg",
+    "static/media/Screenshot 2026-02-22 210101.png": "/static/media/Screenshot 2026-02-22 210101.625e3483016f4c7cb627.png",
+    "static/media/Stepping-back-in-time-on-Kenya's-Lamu-Island.webp": "/static/media/Stepping-back-in-time-on-Kenya's-Lamu-Island.1e7b713b45ef47ecf92a.webp",
+    "static/media/sddefault.jpg": "/static/media/sddefault.62410496e67f2c483ab5.jpg",
+    "index.html": "/index.html",
+    "main.b1994d86.css.map": "/static/css/main.b1994d86.css.map",
+    "main.20aeed64.js.map": "/static/js/main.20aeed64.js.map",
+    "453.a7e92a11.chunk.js.map": "/static/js/453.a7e92a11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1994d86.css",
+    "static/js/main.20aeed64.js"
+  ]
+}
