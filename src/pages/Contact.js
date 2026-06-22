@@ -20,15 +20,20 @@ const Contact = () => {
   return (
     <div className="page-content">
       <section className="contact-section full-page">
-        <div className="container">
-          <h2>Contact Us</h2>
+        <div className="site-container contact-shell">
+          <div className="page-hero__inner contact-shell__header">
+            <div>
+              <p className="eyebrow">Contact Us</p>
+              <h2>Get in touch or send a message directly.</h2>
+            </div>
+          </div>
 
           <div className="contact-grid">
-            <div className="contact-info-section">
+            <article className="contact-card contact-info-section">
               <h3>Get In Touch</h3>
               <div className="contact-item">
                 <strong>📧 Email:</strong>
-                <p>info@simbasafaris.com</p>
+                <p>simbamkusafaris@gmail.com</p>
               </div>
               <div className="contact-item">
                 <strong>📱 Phone:</strong>
@@ -42,9 +47,9 @@ const Contact = () => {
                 <strong>⏰ Operating Hours:</strong>
                 <p>Monday - Sunday: 8:00 AM - 6:00 PM</p>
               </div>
-            </div>
+            </article>
 
-            <div className="contact-form-section">
+            <article className="contact-card contact-form-section">
               <h3>Send Us a Message</h3>
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="form-group">
@@ -82,7 +87,7 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="cta-button">Send via WhatsApp</button>
               </form>
-            </div>
+            </article>
           </div>
         </div>
       </section>
