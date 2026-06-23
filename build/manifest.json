@@ -3,12 +3,12 @@
   "name": "Simba mku safaris",
   "icons": [
     {
-      "src": "simba-safaris.png",
+      "src": "favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "simba-safaris.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "512x512"
     }

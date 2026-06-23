@@ -13,7 +13,7 @@ const navLinks = [
   { label: "Contact Us", to: "/contact" },
 ];
 
-function ShellHeader() {
+function ShellHeader({ isMenuOpen, setIsMenuOpen }) {
   return (
     <header className="topbar">
       <div className="site-container topbar__inner">
@@ -21,9 +21,28 @@ function ShellHeader() {
           <span className="topbar__brand-title">Simba Mku Safaris</span>
         </Link>
 
-        <nav className="topbar__nav" aria-label="Primary navigation">
+        <button
+          className="topbar__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded={isMenuOpen}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          className={`topbar__nav ${isMenuOpen ? "topbar__nav--open" : ""}`}
+          aria-label="Primary navigation"
+        >
           {navLinks.map((item) => (
-            <Link className="topbar__link" to={item.to} key={item.label}>
+            <Link
+              className="topbar__link"
+              to={item.to}
+              key={item.label}
+              onClick={() => setIsMenuOpen(false)}
+            >
               {item.label}
             </Link>
           ))}
@@ -77,6 +96,7 @@ function HomePage() {
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setShowSplash(false), 1800);
@@ -90,7 +110,7 @@ function App() {
           <h1 className="splash-title">Simba Mku Safaris</h1>
         </div>
       )}
-      <ShellHeader />
+      <ShellHeader isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/destinations" element={<Destinations />} />
