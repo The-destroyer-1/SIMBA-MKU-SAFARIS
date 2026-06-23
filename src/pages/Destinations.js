@@ -77,7 +77,7 @@ const Destinations = () => {
                 <p className="destination-short">{dest.description}</p>
                 <p className="destination-history">{dest.history}</p>
                 <a className="destination-cta" href={buildWhatsAppLink(dest.name)} target="_blank" rel="noreferrer">
-                  WhatsApp me about {dest.name}
+                 BOOK NOW 
                 </a>
               </div>
             </article>

@@ -63,7 +63,7 @@ const Safaris = () => {
                 </div>
                 <p className="destination-short">{safari.description}</p>
                 <a className="destination-cta" href={buildWhatsAppLink(safari.name)} target="_blank" rel="noreferrer">
-                  WhatsApp me about this safari
+                  BOOK NOW
                 </a>
               </div>
             </article>
