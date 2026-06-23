@@ -7,6 +7,7 @@ import Safaris from "./pages/Safaris";
 import "./App.css";
 
 const navLinks = [
+  { label: "Home", to: "/" },
   { label: "Destinations", to: "/destinations" },
   { label: "Safaris", to: "/safaris" },
   { label: "Contact Us", to: "/contact" },

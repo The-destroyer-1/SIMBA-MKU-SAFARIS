@@ -1,4 +1,10 @@
 import React from 'react';
+import amboseliImg from '../Amboseli.jpg';
+import dianiImg from '../Diani.jpg';
+import masaiMaraImg from '../Masai Mara.jpg';
+import tsavoImg from '../Tsavo.jpg';
+import watamuImg from '../Watamu.jpg';
+import moreKenyaImg from '../More Kenya.jpg';
 
 const whatsappNumber = '254799708249';
 
@@ -10,36 +16,42 @@ const Destinations = () => {
     {
       id: 1,
       name: 'Masai Mara',
+      image: masaiMaraImg,
       description: 'Largest game reserve',
       history: 'Kenya\'s most famous national reserve, home to the Great Migration with over 2 million wildebeest.',
     },
     {
       id: 2,
       name: 'Tsavo',
-            description: 'Vast wildlife sanctuary',
+      image: tsavoImg,
+      description: 'Vast wildlife sanctuary',
       history: 'Kenya\'s largest national park with red volcanic soil, the legendary Big Five, and dramatic landscapes.',
     },
     {
       id: 3,
       name: 'Amboseli',
-           description: 'Elephant paradise',
+      image: amboseliImg,
+      description: 'Elephant paradise',
       history: 'Famous for large elephant herds with Mount Kilimanjaro as a backdrop and stunning views.',
     },
     {
       id: 4,
       name: 'Diani',
-           description: 'Pristine beaches',
+      image: dianiImg,
+      description: 'Pristine beaches',
       history: 'One of Kenya\'s most beautiful coastal destinations with soft white sand and clear water.',
     },
     {
       id: 5,
       name: 'Watamu',
-            description: 'Tropical beauty',
+      image: watamuImg,
+      description: 'Tropical beauty',
       history: 'A coastal gem with turquoise waters, marine parks, and excellent snorkeling and relaxation.',
     },
     {
       id: 6,
       name: 'More Kenya',
+      image: moreKenyaImg,
       description: 'More Kenya',
       history: 'Nairobi, Naivasha, Mombasa, Samburu, and custom routes built around your perfect trip.',
     },

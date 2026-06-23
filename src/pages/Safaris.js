@@ -1,4 +1,8 @@
 import React from 'react';
+import masaiMaraImg from '../Masai Mara.jpg';
+import amboseliImg from '../Amboseli.jpg';
+import tsavoImg from '../Tsavo.jpg';
+import coastSafariComboImg from '../Coast and Safari Combo.jpg';
 
 const whatsappNumber = '254799708249';
 
@@ -8,25 +12,25 @@ const buildWhatsAppLink = (name) =>
 const safaris = [
   {
     name: 'Masai Mara Classic Safari',
-    image: `${process.env.PUBLIC_URL}/masai-mara.jpg`,
+    image: masaiMaraImg,
     duration: '3 to 5 days',
     description: 'A signature safari with big game drives, scenic plains, and flexible pickup options.',
   },
   {
     name: 'Amboseli Elephant Safari',
-    image: `${process.env.PUBLIC_URL}/amboseli.jpg`,
+    image: amboseliImg,
     duration: '2 to 4 days',
     description: 'Iconic elephant viewing with clear mountain views and relaxed travel pacing.',
   },
   {
     name: 'Tsavo Wilderness Safari',
-    image: `${process.env.PUBLIC_URL}/tsavo.jpg`,
+    image: tsavoImg,
     duration: '3 to 6 days',
     description: 'Wide open wilderness, dramatic landscapes, and true Kenya safari energy.',
   },
   {
     name: 'Coast and Safari Combo',
-    image: `${process.env.PUBLIC_URL}/diani.jpg`,
+    image: coastSafariComboImg,
     duration: '5 to 8 days',
     description: 'A mixed itinerary that blends safari adventure with Diani or Watamu beach time.',
   },
